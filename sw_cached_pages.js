@@ -1,10 +1,13 @@
 const cacheName = 'v1';
 
+console.log('Service Worker: Start');
+
 const cacheAssets = [
   'index.html',
   'about.html',
   'bulma/css/bulma.min.css',
-  'js/main.js'
+  'js/main.js',
+  'images/icons/'
 ];
 
 // Call Install Event
