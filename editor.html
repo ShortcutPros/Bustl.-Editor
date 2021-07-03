@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white-translucent">    
+<!--     PWA required cache files  -->
+    <link rel="apple-touch-icon" href="https://i.imgur.com/UVssGbk.png">
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="bulma/css/bulma.min.css" type="text/css" />
+    <link rel="icon" type="image/png" href="images/icons/icon-128x128.png" sizes="128x128" />
+    
+    <title>Bustl. Image</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      @charset "utf-8"; 
+      @import "bulma/css/bulma.min.css";
+      html { font-size: 100%; font-family: Helvetica, Arial, Freesans, clean, sans-serif; }     
+      body { margin: 0; padding: 1em; background-color: white; font-family: system-ui; color: black; }
+      @media (prefers-color-scheme: dark;) { body { background-color: black; color: white; }}  /* Dark Mode */ 
+      @media (max-device-width: 480px;) { }
+      @media (min-device-width: 481px;) { body { margin: auto; max-width: 600px; }}
+      img { max-width: 90%; }
+      /* debug.css | MIT License | zaydek.github.com/debug.css *
+      :not(path):not(g) {
+      	color:                    hsla(210, 100%, 100%, 0.9) !important;
+      	background:               hsla(210, 100%,  50%, 0.5) !important;
+      	outline:    solid 0.25rem hsla(210, 100%, 100%, 0.5) !important;
+      	box-shadow: none !important;
+      }  */
+    </style>
+  </head>
+  <body>
+    <div class="hero-head" style="margin: 1.5rem;">
+      <section class="section">
+        <center>
+          <div class="container">
+            <h1 class="title">Bustl. Image Editor</h1>
+          </div>
+        </center>
+      </section>
+    </div>
+		<!-- Start Hero Carousel -->
+		<section class="hero is-medium has-carousel" style="margin: 1.5rem;">
+			<div id="carousel" class="hero-carousel">
+				<div class="item-1">
+          <img src="https://images.unsplash.com/photo-1515037258355-af65429f26b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1650&q=80" />
+				</div>
+				<div class="item-2">
+					<img src="https://images.unsplash.com/photo-1617396900799-f4ec2b43c7ae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1650&q=80" />
+				</div>
+				<div class="item-3">
+					<img src="https://images.unsplash.com/photo-1624906482400-d18e5cc8415f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80" />
+				</div>
+        <div class="item-4">
+          <img src="https://images.unsplash.com/photo-1496937658648-f529947a47ac?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" />
+        </div>
+			</div>
+			<div class="hero-body"></div>
+			<div class="hero-foot"></div>
+		</section>
+		<!-- End Hero Carousel -->
+    <section class="section">
+        <div class="container">
+          <div class="columns is-one-third is-multiline">
+            <div class="column is-4">
+              <center>
+                <button class="button" onclick="window.open('shortcuts://run-shortcut?name=INTEGRITY&input=%7B%22name%22:%22%F0%9F%93%B8%20Overlay%20Clipboard%20On%20Image%22,%22input%22:%22clipboard%22%7D');window.close();" >
+                <!-- <img src="https://i.imgur.com/7gc5MIW.jpg" /> -->
+                <tag class="tag is-black is-large">Overlay Clipboard</tag>
+                </button>
+              </center>
+            </div>
+            <div class="column is-4">
+              <center>
+                <button onclick="window.open('shortcuts://run-shortcut?name=INTEGRITY&input=%7B%22name%22:%22%F0%9F%93%B8%20Select.%26%20Add%20Images%22,%22input%22:%22clipboard%22%7D');window.close();" >
+                  <!-- <img src="https://i.imgur.com/2DlQ3DF.jpg" /> -->
+                  <tag class="tag is-black is-large">Select.& Add Images</tag>
+                 </button>
+               </center>
+             </div>
+             <div class="column is-4">
+               <center>
+                 <button onclick="window.open('shortcuts://run-shortcut?name=INTEGRITY&input=%7B%22name%22:%22%F0%9F%93%B8%20Remove%20Images%22,%22input%22:%22clipboard%22%7D');window.close();" >
+                   <!-- <img src="https://i.imgur.com/ZhfFps2.jpg" /> -->
+                   <tag class="tag is-black is-large">Remove Images</tag>
+                 </button>
+               </center>
+             </div>
+             <div class="column is-4">
+               <center>
+                 <button onclick="window.open('shortcuts://run-shortcut?name=INTEGRITY&input=%7B%22name%22:%22%F0%9F%93%B8%20Get%20Image%20Details%22,%22input%22:%22clipboard%22%7D');window.close();" >
+                   <!-- <img src="https://i.imgur.com/6nmSqfx.jpg" /> -->
+                   <tag class="tag is-black is-large">Get Image Details</tag>
+                 </button>
+               </center>
+                 </div>
+
+<div class="column is-4"><center>
+<button onclick="window.open('shortcuts://run-shortcut?name=INTEGRITY&input=%7B%22name%22:%22%F0%9F%93%B8%20Resize%20Image%22,%22input%22:%22clipboard%22%7D');window.close();" >
+<!-- <img src="https://i.imgur.com/ixlw8Yq.jpg" /> -->
+<tag class="tag is-black is-large">Resize Image</tag>
+</button></center>
+</div>
+
+<div class="column is-4"><center>
+<button onclick="window.open('shortcuts://run-shortcut?name=INTEGRITY&input=%7B%22name%22:%22%F0%9F%93%B8%20Rotate%20Image%22,%22input%22:%22clipboard%22%7D');window.close();" >
+<!-- <img src="https://i.imgur.com/suwdTwy.jpg" /> -->
+<tag class="tag is-black is-large">Rotate Image</tag>
+</button></center>
+</div>
+
+<div class="column is-4"><center>
+<button onclick="window.open('shortcuts://run-shortcut?name=INTEGRITY&input=%7B%22name%22:%22%F0%9F%93%B8%20Flip%20Image%22,%22input%22:%22clipboard%22%7D');window.close();" >
+<!-- <img src="https://i.imgur.com/z8Nb6ds.jpg" /> -->
+<tag class="tag is-black is-large">Flip Image</tag>
+</button></center>
+</div>
+
+<div class="column is-4"><center>
+<button onclick="window.open('shortcuts://run-shortcut?name=INTEGRITY&input=%7B%22name%22:%22%F0%9F%93%B8%20Convert%20Image%20Format%22,%22input%22:%22clipboard%22%7D');window.close();" >
+<!-- <img src="https://i.imgur.com/O3VGzyy.jpg" /> -->
+<tag class="tag is-black is-large">Convert Image Format</tag>
+</button></center>
+</div>
+
+<div class="column is-4"><center>
+<button onclick="window.open('shortcuts://run-shortcut?name=INTEGRITY&input=%7B%22name%22:%22%F0%9F%93%B8%20Mask%20Image%20With%20Ellipse%22,%22input%22:%22clipboard%22%7D');window.close();" >
+<!-- <img src="https://i.imgur.com/8BqUN6G.jpg" /> -->
+<tag class="tag is-black is-large">Mask Image With Ellipse</tag>
+</button></center>
+</div>
+
+<div class="column is-4"><center>
+<button onclick="window.open('shortcuts://run-shortcut?name=INTEGRITY&input=%7B%22name%22:%22%F0%9F%93%B8%20Combine%20Images%22,%22input%22:%22clipboard%22%7D');window.close();" >
+<!-- <img src="https://i.imgur.com/d386viU.jpg" /> -->
+<tag class="tag is-black is-large">Combine Images</tag>
+</button></center>
+</div>
+
+<div class="column is-4"><center>
+<button onclick="window.open('shortcuts://run-shortcut?name=INTEGRITY&input=%7B%22name%22:%22%F0%9F%93%B8%20Exit%20With%20IMGUR%20Link%22,%22input%22:%22clipboard%22%7D');window.close();" >
+<!-- <img src="https://i.imgur.com/7BgIflL.jpg" /> -->
+<tag class="tag is-black is-large">Exit With IMGUR Link</tag>
+</button></center>
+</div>
+
+          <div class="column is-4">
+            <center>
+              <button onclick="window.open('shortcuts://run-shortcut?name=INTEGRITY&input=%7B%22name%22:%22%F0%9F%93%B8%20Exit%20With%20Images%22,%22input%22:%22clipboard%22%7D');window.close();" >
+                <!-- <img src="https://i.imgur.com/j2y78WZ.jpg" /> -->
+                <tag class="tag is-black is-large">Exit With Images</tag>
+              </button>
+            </center>
+          </div>
+        </div>
+      </div>
+    </section>
+		<script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+		<script>
+      // Initialize all elements with carousel class.
+      const carousels = bulmaCarousel.attach('#carousel', 			{ slidesToScroll: 1, slidesToShow: 2, navigation: true, navigationSwipe: true, autoplay: true, loop: true, infinite: true }
+      );
+      
+      // To access to bulmaCarousel instance# of an element
+      const element = document.querySelector('#carousel');
+      if (element && element.bulmaCarousel) {
+
+        // bulmaCarousel instance is available as element.bulmaCarousel
+      }
+      
+      
+		</script>
+	</body>
+  </html>

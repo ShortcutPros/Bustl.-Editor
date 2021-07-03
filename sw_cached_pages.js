@@ -3,8 +3,8 @@ const cacheName = 'v1';
 const cacheAssets = [
   'index.html',
   'about.html',
-  '/bulma/css/bulma.min.css',
-  '/js/main.js'
+  'bulma/css/bulma.min.css',
+  'js/main.js'
 ];
 
 // Call Install Event
