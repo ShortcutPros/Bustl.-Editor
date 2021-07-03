@@ -4,7 +4,7 @@ console.log('Service Worker: Start');
 
 const cacheAssets = [
   'index.html',
-  'about.html',
+  'editor.html',
   'bulma/css/bulma.min.css',
   'js/main.js',
   'images/icons/'

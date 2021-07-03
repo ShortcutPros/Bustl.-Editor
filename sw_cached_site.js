@@ -1,3 +1,5 @@
+console.log('Hello');
+
 const cacheName = 'v2';
 
 // Call Install Event
