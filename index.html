@@ -26,9 +26,9 @@
       html { font-size: 100%; font-family: Helvetica, Arial, Freesans, clean, sans-serif; min-height: calc(100% + env(safe-area-inset-top)); padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);... background-attachment: fixed; background-image: url('/bg.svg'); background-position: center; background-repeat: no-repeat; background-size: cover; }
       .left-sidebar { padding: env(safe-area-inset-top) 0 0 env(safe-area-inset-left); }
       .right-sidebar { padding: env(safe-area-inset-top) 0 0 env(safe-area-inset-right); }
-      body, .title { margin: 0; padding: 1em; background: white; font-family: system-ui; color: black }
+      body, .title, .shortcut { margin: 0; padding: 1em; background: white; font-family: system-ui; color: black }
       @media (prefers-color-scheme: dark) {
-        html, body, .title { background-color: #333333; color: white; }
+        html, body, .title, .shortcut { background-color: #333333; color: white; }
       }
       @media (max-device-width: 480px) { }
       @media (min-device-width: 481px) { 
@@ -39,58 +39,58 @@
   </head>
   <body>
 <!-- Beg -->
-    <header>
+    <div>
       <center>
         <div class="container">
           <h1 class="title">Bustl. <em>cutz</em></h1>
           <h2 class="subtitle"><strong style="color: grey;">bustl.•io</strong></h2><br />
         </div>
       </center>
-    </header>
+    </div>
     <div class="columns is-mobile is-multiline">
       <div class="column is-3 is-half-mobile">
         <center>
-          <a href="shortcuts://run-shortcut?name=INTEGRITY&input=text&text=Clipboard"><img src="https://i.imgur.com/vRMcDiD.png" /><p>Clipboard</p></a>
+          <a href="shortcuts://run-shortcut?name=INTEGRITY&input=text&text=Clipboard"><img src="https://i.imgur.com/vRMcDiD.png" /><p class="shortcut">Clipboard</p></a>
         </center>
       </div>
       <div class="column is-3 is-half-mobile">
         <center>
-          <a href="shortcuts://run-shortcut?name=INTEGRITY&input=text&text=Bustl.%20Updater"><img src="https://i.imgur.com/Thn9wTR.png" /><p>Bustl. Updater</p></a>
+          <a href="shortcuts://run-shortcut?name=INTEGRITY&input=text&text=Bustl.%20Updater"><img src="https://i.imgur.com/Thn9wTR.png" /><p class="shortcut">Bustl. Updater</p></a>
         </center>
       </div>
       <div class="column is-3 is-half-mobile">
         <center>
-          <a href="shortcuts://run-shortcut?name=INTEGRITY&input=text&text=Push%20Message"><img src="https://i.imgur.com/QIOt9bt.png" /><p>Push Message</p></a>
+          <a href="shortcuts://run-shortcut?name=INTEGRITY&input=text&text=Push%20Message"><img src="https://i.imgur.com/QIOt9bt.png" /><p class="shortcut" >Push Message</p></a>
         </center>
       </div>
       <div class="column is-3 is-half-mobile">
         <center>
-          <a href="shortcuts://run-shortcut?name=INTEGRITY&input=text&text=Bustl%20Formz%20Builder"><img src="https://i.imgur.com/XxBX2Oj.png" /><p>Bustl Formz Builder</p></a>
+          <a href="shortcuts://run-shortcut?name=INTEGRITY&input=text&text=Bustl%20Formz%20Builder"><img src="https://i.imgur.com/XxBX2Oj.png" /><p class="shortcut">Bustl Formz Builder</p></a>
         </center>
       </div>
       <div class="column is-3 is-half-mobile">
         <center>
-          <a href="shortcuts://run-shortcut?name=INTEGRITY&input=text&text=Shortcut%20Publisher"><img src="https://i.imgur.com/fCTI0eS.png" /><p>Shortcut Publisher</p></a>
+          <a href="shortcuts://run-shortcut?name=INTEGRITY&input=text&text=Shortcut%20Publisher"><img src="https://i.imgur.com/fCTI0eS.png" /><p class="shortcut">Shortcut Publisher</p></a>
         </center>
       </div>
       <div class="column is-3 is-half-mobile">
         <center>
-          <a href="shortcuts://run-shortcut?name=INTEGRITY&input=text&text=Bustl.-Installer"><img src="https://i.imgur.com/CuHmYJg.png" /><p>Bustl.-Installer</p></a>
+          <a href="shortcuts://run-shortcut?name=INTEGRITY&input=text&text=Bustl.-Installer"><img src="https://i.imgur.com/CuHmYJg.png" /><p class="shortcut">Bustl.-Installer</p></a>
         </center>
       </div>
       <div class="column is-3 is-half-mobile">
         <center>
-          <a href="shortcuts://run-shortcut?name=INTEGRITY&input=text&text=Set%20Alarm%20Plus"><img src="https://i.imgur.com/dMbthUg.png" /><p>Set Alarm Plus</p></a>
+          <a href="shortcuts://run-shortcut?name=INTEGRITY&input=text&text=Set%20Alarm%20Plus"><img src="https://i.imgur.com/dMbthUg.png" /><p class="shortcut">Set Alarm Plus</p></a>
         </center>
       </div>
       <div class="column is-3 is-half-mobile">
         <center>
-          <a href="shortcuts://run-shortcut?name=INTEGRITY&input=text&text=Make%20Installer%20Package"><img src="https://i.imgur.com/rI2L0WG.png" /><p>Make Installer Package</p></a>
+          <a href="shortcuts://run-shortcut?name=INTEGRITY&input=text&text=Make%20Installer%20Package"><img src="https://i.imgur.com/rI2L0WG.png" /><p class="shortcut">Make Installer Package</p></a>
         </center>
       </div>
       <div class="column is-3 is-half-mobile">
         <center>
-          <a href="shortcuts://run-shortcut?name=INTEGRITY&input=text&text=AutoBackup"><img src="https://i.imgur.com/KlPWshl.png" /><p>AutoBackup</p></a>
+          <a href="shortcuts://run-shortcut?name=INTEGRITY&input=text&text=AutoBackup"><img src="https://i.imgur.com/KlPWshl.png" /><p class="shortcut">AutoBackup</p></a>
         </center>
       </div>
     </div>
