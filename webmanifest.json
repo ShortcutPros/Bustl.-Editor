@@ -1,8 +1,8 @@
 {
   "name": "Bustl.Cutz",
   "short_name": "Bustl.",
-  "theme_color": "#c0ffee",
-  "background_color": "#fffccf",
+  "theme_color": "#000000",
+  "background_color": "#000000",
   "display": "minimal-ui",
   "orientation": "portrait",
   "scope": "/",
