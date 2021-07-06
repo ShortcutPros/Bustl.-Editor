@@ -3,10 +3,21 @@
   "short_name": "Bustl.",
   "theme_color": "#000000",
   "background_color": "#000000",
-  "display": "minimal-ui",
+  "display": "standalone",
+  "share-target": True,
+  "related_applications": {
+    "platform": "itunes",
+    "id": "io.github.shortcutspro.bustl",
+    "url": "https://shortcutspro.github.io/bustl/"
+  },
+  "prefer_related_applications": True,
   "orientation": "portrait",
   "scope": "/",
   "start_url": "index.html",
+  "protocol_handlers": {
+    "protocol": "bustl",
+    "url": "index.html"
+  }
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
