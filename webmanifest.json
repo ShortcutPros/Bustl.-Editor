@@ -15,7 +15,7 @@
   "scope": "/",
   "start_url": "index.html",
   "protocol_handlers": {
-    "protocol": "bustl://",
+    "protocol": "bustl",
     "url": "index.html"
   }
   "icons": [
