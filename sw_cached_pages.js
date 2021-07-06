@@ -4,10 +4,12 @@ console.log('Service Worker: Start');
 
 const cacheAssets = [
   'index.html',
-  'editor.html',
   'bulma/css/bulma.min.css',
   'js/main.js',
-  'images/icons/'
+  'images/apple-touch-startup-image.png',
+  'sw_cached_pages.js',
+  'sw_cached_site.js',
+  'webmanifest.json'
 ];
 
 // Call Install Event
